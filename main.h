@@ -20,5 +20,5 @@ struct Student {
 int main();
 void print_student(struct Student st);
 void print_school(struct School sc);
-void modify_student(struct Student *st, char *name, char *classes[CLASS_LEN], struct School school);
+//void modify_student(struct Student *st, char *name, char *classes[CLASS_LEN], struct School school);
 void rand_student(struct Student *st);

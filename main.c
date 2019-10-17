@@ -63,16 +63,20 @@ void rand_student(struct Student *st) {
 
 int main() {
   printf("3 different students were walking on the street. One of them got accepted into hogwarts, but the owl was like super lazy, and didn't really care, so he just gave it to a random one. The student, listed below got the ticket\n");
-  struct School sc1;
-  sc1.name = "Stuyvesant";
-  sc1.num_students = 2,400;
-
-  struct Student *st;
-  st->name = "Adris";
-  st->classes[0] = "systems";
-  st->classes[1] = "robotics";
-  st->school = sc1;
-//  rand_student(st);
-//  print_student(*st);
+//  struct School sc1;
+//  sc1.name = "Stuyvesant";
+//  sc1.num_students = 2400;
+//
+//  struct School sc2;
+//  sc2.name = "Brooklyn Tech";
+//  sc2.num_students = 9001;
+  struct Student st;
+//  char *classes[CLASS_LEN] = { "hello", "world" };
+//  st.name = "Adris";
+//  st.classes[0] = "systems";
+//  st.classes[1] = "robotics";
+//  st.school = sc1;
+  rand_student(&st);
+  print_student(st);
   return 0;
 }
